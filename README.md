@@ -1,4 +1,4 @@
-# Template for creating Quarto reveal.js presentation
+# Template for creating a Quarto reveal.js presentation
 
 
 ![](images/title-slide.png)
@@ -9,7 +9,8 @@ This template uses a [minimalist, clean theme](https://github.com/anthology-of-d
 
 - Create new repository from this template
 - Clone the repository to your local machine
-- Run `quarto publish gh-pages`
+- Write your presentation in `index.qmd`
+- Run `quarto publish gh-pages` to publish it on GitHub
 
 
 ## Authoring with Quarto
