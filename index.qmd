@@ -1,0 +1,78 @@
+---
+title: Put main title here
+subtitle: Sub-title goes here
+format: clean-revealjs
+
+html-math-method:
+  method: mathjax
+  url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+author:
+  - name: Dr Daniel Kapitan
+    orcid: 0000-0001-8979-9194
+    email: daniel@kapitan.net
+    affiliations: Eindhoven AI Systems Institute
+date: last-modified
+
+---
+
+## Attribution & copyright notice
+
+::: {style="font-size: 80%;"}
+
+This lecture is based on the following open access materials:
+
+- Voltron Data, [The Composable Codex](https://voltrondata.com/codex/a-new-frontier)
+- Cody Peterson, [Modern, hybrid, open analytics](https://anthology-of-data.science/posts/ibis-analytics/)
+- Thierry Jean, [Portable dataflows with Ibis and Hamilton](https://anthology-of-data.science/posts/hamilton-ibis/)
+- Documentation of the following Python libraries: [DuckDB](https://duckdb.org/docs/), [Ibis](https://ibis-project.org), [hamilton](https://github.com/dagworks-inc/hamilton), [polars](https://docs.pola.rs/), [Shiny for Python](https://shiny.posit.co/py/)
+
+Source code: [https://github.com/anthology-of-data-science/lecture-composable-data-stack](https://github.com/anthology-of-data-science/lecture-composable-data-stack)
+
+```{=html}
+<p xmlns:cc="http://creativecommons.org/ns#" >Daniel Kapitan, <em>Modern, open and downward-scaleable data engineering</em>.<br>This work is licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-SA 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1" alt=""></a></p>
+```
+:::
+
+## Learning objectives
+
+<br>
+
+:::: {.columns style="font-size: 80%;"}
+
+::: {.column width="50%"}
+
+### Understand the problem
+
+- how data platforms evolved in the past couple of decades
+- current problems with data platforms
+- what concepts underlie the composable data stack
+- what concepts underlie modern data engineering workflows
+
+:::
+
+::: {.column width="50%"}
+
+### Know how to
+
+- Build end-to-end data pipeline using open source implementations of the composable data stack
+- Apply best practices of functional data engineering
+- Apply the split-apply-combine strategy with various syntaxes
+
+:::
+::::
+
+::: {style="font-size: 80%;"}
+### Reflect
+
+- on how this impact your (future) work as a data engineer
+- on the pro's and con's of open standards and open source
+
+::: 
+
+
+# A new section
+## A new slide
+### Subtitle of new slide in new section
+
+- Today
+- ... is a beautiful day.
