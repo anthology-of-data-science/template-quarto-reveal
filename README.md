@@ -10,7 +10,7 @@ This template uses a [minimalist, clean theme](https://github.com/anthology-of-d
 - Create new repository from this template
 - Clone the repository to your local machine
 - Write your presentation in `index.qmd`
-- Run `quarto publish gh-pages` to publish it on GitHub
+- Run `quarto publish gh-pages index.qmd` to publish it on GitHub
 
 
 ## Authoring with Quarto
