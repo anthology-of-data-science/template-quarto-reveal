@@ -76,3 +76,5 @@ Source code: [https://github.com/anthology-of-data-science/lecture-composable-da
 
 - Today
 - ... is a beautiful day.
+
+## Thanks for your attention. {background-image="images/speakerscorner.jpg" background-size="contain" background-repeat="no-repeat"}
