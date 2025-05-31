@@ -1,0 +1,38 @@
+meta:
+  name: Mozilla Brand
+  links:
+    home: https://mozilla.design/mozilla/
+color:
+  palette:
+    # primary
+    neon-blue: "#00ffff"
+    lemon-yellow: "#fff44f"
+    warm-red: "#ff4f5e"
+    neon-green: "#54ffbd"
+    dark-purple: "#6e008b"
+    # secondary
+    dark-green: "#005e5e"
+    dark-blue: "#00458b"
+    dark-grey: "#959595"
+    light-grey: "#e7e5e2"
+  
+  background: white
+  foreground: black
+  primary: warm-red
+  secondary: light-grey
+  tertiary: dark-grey
+  success: dark-green
+  info: warm-red
+
+
+# logo: 
+#   medium: logo.png
+
+typography:
+  fonts:
+    - family: Fira Sans
+      source: google
+    - family: Zilla Slab
+      source: google
+  base: Fira Sans
+  headings: Zilla Slab

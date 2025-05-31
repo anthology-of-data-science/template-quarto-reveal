@@ -2,13 +2,11 @@
 
 // Custom colours and variables
 
-$jet: #131516;
-$accent: #ff4f5e;
-$accent2: #959595;
+// $jet: black;
+// $accent: $brand-warm-red;
+// $accent2: $brand-dark-purple;
 // $accent2: #e64173;
 $right-arrow: "\2192"; // Unicode character for right arrow
-$en-dash: "\2013"; // en-dash
-$hyphen: "\2010";
 
 // fonts
 
@@ -26,23 +24,21 @@ Note: This theme uses the Roboto font family, which it imports from Google
   preserving consistent font weights, you may also wish to remove "Roboto"
   from the choice set if the family is installed locally.
 */
-@import url('https://fonts.googleapis.com/css?family=Inter:200,200i,300,300i,350,350i,400,400i&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Zilla+Slab:200,200i,300,300i,350,350i,400,400i&display=swap');
+// @import url('https://fonts.googleapis.com/css?family=Roboto:200,200i,300,300i,350,350i,400,400i&display=swap');
 
+// $font-family-sans-serif: "Roboto", sans-serif !default;
+// $presentation-heading-font: "Roboto", sans-serif !default;
 
-$font-family-sans-serif: "Inter", sans-serif !default;
-$presentation-heading-font: "Zilla Slab", sans-serif !default;
-
-$presentation-heading-color: $jet !default;
+$presentation-heading-color: black !default;
 $presentation-heading-font-weight: lighter;
-//$presentation-heading-line-height: 2;
-//$presentation-block-margin: 28px;
+// $presentation-heading-line-height: 2;
+// $presentation-block-margin: 28px;
 $presentation-font-size-root: 32px;
 
 // colors
-//$body-bg: #f0f1eb !default;
-$body-color: $jet !default;
-$link-color: $accent !default;
+$body-bg: white !default;
+$body-color: black !default;
+// $link-color: $brand-warm-red !default;
 $selection-bg: #26351c !default;
 
 
@@ -53,7 +49,7 @@ $selection-bg: #26351c !default;
 }
 
 .reveal p {
-  font-size: 90%;
+  // font-weight: 300;
   font-weight: lighter;
   margin-top: 1.25em;
 }
@@ -65,15 +61,14 @@ $selection-bg: #26351c !default;
 
   .title {
     color: $body-color;
-    font-size: 1.8em;
+    font-size: 1.4em;
     // font-weight: 350;
     font-weight: lighter;
   }
 
   .subtitle {
-    font-family: $presentation-heading-font;
-    color: $accent;
-    // font-style: italic;
+    color: $brand-warm-red;
+    font-style: italic;
     margin-top: 0em;
     font-weight: lighter;
   }
@@ -82,14 +77,13 @@ $selection-bg: #26351c !default;
   .quarto-title-affiliation,
   .quarto-title-author-email {
     font-style: italic;
-    font-size: 60%;
+    // font-size: 80%;
     // color: #7F7F7F;
   }
 
   .author,
   .quarto-title-author-name {
     color: $body-color;
-    font-size: 90%;
   }
 
   .quarto-title-authors {
@@ -105,40 +99,36 @@ $selection-bg: #26351c !default;
 
 }
 
-.reveal .slide-number a {
-  font-family: $presentation-heading-font;
-  color: currentColor;
-}
-
 
 .reveal h2 {
-  font-weight: 500;
-  // font-weight: normal;
-  font-size: 140%;
+  // font-weight: 350;
+  font-weight: lighter;
+  font-size: 1.4em;
 }
 
 .reveal h3 {
-  color: $accent;
-  // font-style: italic;
-  // font-weight: 300;
-  font-size: 120%;
+  color: $brand-warm-red;
+  font-style: italic;
+  // font-weight: 350;
+  font-weight: lighter;
+  font-size: 0.95em;
 }
 
 .reveal h4 {
-  color: $accent2;
-  font-weight: 200;
-  font-size: 100%;
-  margin-top: 1em;
+  color: $brand-dark-purple;
+  // font-weight: 350;
+  font-weight: normal;
+  margin-top: 1.25em;
 }
 
 // alerts etc.
 
 .alert {
-  color: $accent2;
+  color: $brand-dark-purple;
 }
 
 .fg {
-  color: var(--col, $jet);
+  color: var(--col, black);
 }
 
 .bg {
@@ -154,34 +144,25 @@ $selection-bg: #26351c !default;
 
 .reveal ul {
   // font-weight: 300;
-  font-size: 90%;
   font-weight: lighter;
-
-  padding-left: 0.2em;
+  padding-left: 16px;
 
   li::marker {
-    color: $accent;
-    content: $en-dash;
-  }
-
-  li { 
-    padding-inline-start: 0.5em;
+    color: mix($brand-warm-red, white, 70%);
   }
 }
 
 .reveal ul ul {
   list-style: none;
-  margin-left: 0.3em;
-  margin-right: 0.5em;
 
-  li::marker {
-    color: $accent2;
-    content: $hyphen;
+  li:before {
+    content: $right-arrow;
+    color: mix($brand-warm-red, white, 60%);
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 0.5em;
   }
-  li { 
-    padding-inline-start: 0.5em;
-    color: $accent2;
-  }  
 }
 
 // Ordered lists
@@ -192,7 +173,7 @@ $selection-bg: #26351c !default;
   padding-left: 16px;
 
   li::marker {
-    color: $accent;
+    color: $brand-warm-red;
   }
 }
 
@@ -229,6 +210,26 @@ $selection-bg: #26351c !default;
   pointer-events: auto;
 }
 
+// Logo to the bottom-left
+.slide-logo {
+  display: block !important;
+  position: fixed !important;
+  bottom: 0 !important;
+  left: 10px !important;
+  max-width: 150px; // Adjust if necessary
+  max-height: 50px;
+  width: auto !important;
+  color: $body-color !important;
+}
+
+// Also need to enforce slide numbers at bottom-right (if logo is present)
+.slide-number, .reveal.has-logo .slide-number {
+  bottom: 6px !important;
+  right: 10px !important;
+  top: unset !important;
+  color: #777777 !important;
+}
+
 // Beamer-style button link environment
 
 .button {
@@ -242,8 +243,8 @@ $selection-bg: #26351c !default;
   white-space: nowrap;
   vertical-align: middle;
   cursor: pointer;
-  background-color: $accent;
-  border: 1px solid $accent;
+  background-color: $brand-warm-red;
+  border: 1px solid $brand-warm-red;
   color: #fff !important;
   text-decoration: none;
   border-radius: 4px;
@@ -315,3 +316,37 @@ $selection-bg: #26351c !default;
   height: auto;
   object-fit: contain;
 }
+
+// Change the relative widths of `output-location: column`. 
+// See: https://github.com/grantmcdermott/quarto-revealjs-clean/pull/16
+// Example usage:
+// ```{python}
+// #| echo: true
+// #| output-location: column
+// #| classes: columns3070
+// <code>
+// ```
+.reveal .columns3070 > div.column:first-child {
+  width: 30%;
+}
+.reveal .columns3070 div.column:not(:first-child) {
+  width: 70%;
+}
+.reveal .columns7030 > div.column:first-child {
+  width: 70%;
+}
+.reveal .columns7030 div.column:not(:first-child) {
+  width: 30%;
+}
+.reveal .columns4060 > div.column:first-child {
+  width: 40%;
+}
+.reveal .columns4060 div.column:not(:first-child) {
+  width: 60%;
+}      
+.reveal .columns6040 > div.column:first-child {
+  width: 60%;
+}
+.reveal .columns6040 div.column:not(:first-child) {
+  width: 40%;
+}      
