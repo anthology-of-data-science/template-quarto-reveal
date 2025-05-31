@@ -10,4 +10,9 @@ contributes:
         side: left
       slide-number: true
       date-format: long
-
+      overview: true
+      transition: fade
+      transition-speed: slow
+      background-transition: fade
+      chalkboard: true
+      footer: <https://anthology-of-data.science>

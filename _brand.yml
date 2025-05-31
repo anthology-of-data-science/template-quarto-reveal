@@ -24,9 +24,8 @@ color:
   success: dark-green
   info: warm-red
 
-
-# logo: 
-#   medium: logo.png
+logo: 
+  medium: images/logo-eaisi-bw.png
 
 typography:
   fonts:
